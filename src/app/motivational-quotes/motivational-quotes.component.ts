@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MotivationalQuotesComponent implements OnInit {
    quote1 = "passion is the beginning of success"
+changehero(){
+  this.quote1 = " black panther"
+}
+
 
   constructor() { }
 
