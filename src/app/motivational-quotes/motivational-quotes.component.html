@@ -7,13 +7,17 @@
   <title>QUOTES</title>
 </head>
 <body>
+  <h1>
+    INSPIRE SOME ONE TODAY
+  </h1>
+  <hr>
 <div class="row">
   <div class="col-4 offset-4">
     <ul class="list-group">
       <li class="list-group-item">{{quote1}}</li>
       <li class="list-group-item"></li>
       <input type="text" class = "form-control" [(ngModel)] = "inputQuote1">
-      <li class="list-group-item"><button class="btn btn-success"  type="button" name="button" (click) = "changehero()">change my hero </button></li>
+      <li class="list-group-item"><button class="btn btn-success"  type="button" name="button" (click) = "changehero()" [disabled]  = "!inputQuote1">change my hero </button></li>
     </ul>
   </div>
 </div>
