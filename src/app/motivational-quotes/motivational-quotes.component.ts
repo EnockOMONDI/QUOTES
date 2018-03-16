@@ -11,8 +11,12 @@ changehero(){
   this.quote1 = this.inputQuote1
   inputQuote1 = "null";
   this.inputQuote = null;
+  Adding = "false"
 }
+  Addmore(){
+    this.Adding = !this.Adding
 
+  }
 
   constructor() { }
 
