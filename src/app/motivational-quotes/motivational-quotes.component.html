@@ -14,8 +14,10 @@
 <div class="row">
   <div class="col-4 offset-4">
     <ul class="list-group">
-      <li class="list-group-item">{{quote1}}</li>
-      <li class="list-group-item"></li>
+      <li class="list-group-item" *ngFor="let quote1 of quote1s" > {{quote1}}</li>
+      <li class="list-group-item">
+        <button class="btn btn-info" type="button" name="button">Add a Quote</button>
+       </li>
       <input type="text" class = "form-control" [(ngModel)] = "inputQuote1">
       <li class="list-group-item"><button class="btn btn-success"  type="button" name="button" (click) = "changehero()" [disabled]  = "!inputQuote1">change my hero </button></li>
     </ul>
