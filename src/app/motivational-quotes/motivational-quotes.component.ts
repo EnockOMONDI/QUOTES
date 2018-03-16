@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MotivationalQuotesComponent implements OnInit {
    quote1 = "passion is the beginning of success"
 changehero(){
-  this.quote1 = " black panther"
+  this.quote1 = this.inputQuote1;
+  inputQuote1 = "null";
 }
 
 
