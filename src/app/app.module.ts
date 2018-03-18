@@ -14,7 +14,7 @@ import { MotivationalQuotesComponent } from './motivational-quotes/motivational-
   ],
   imports: [
     BrowserModule
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
