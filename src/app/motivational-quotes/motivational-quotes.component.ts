@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MotivationalQuotesComponent implements OnInit {
    quote1s = ["passion is the beginning of success","today is your day ","tommorow is bright"]
-changehero(){
-  this.quote1 = this.inputQuote1
-  inputQuote1 = "null";
+   Adding = false;
+   inputQuote = null;
+addHero(){
+  this.quote1s.push(this.inputQuote)
   this.inputQuote = null;
-  Adding = "false"
+  this.Adding=false
 }
   Addmore(){
     this.Adding = !this.Adding

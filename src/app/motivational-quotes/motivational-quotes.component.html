@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>
-    INSPIRE SOME ONE TODAY
+    INSPIRE SOMEONE TODAY
   </h1>
   <hr>
 <div class="row">
@@ -16,13 +16,13 @@
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let quote1 of quote1s" > {{quote1}}</li>
       <li class="list-group-item">
-        <button class="btn btn-info" type="button" name="button" (click)= "Addmore()">Add a Quote</button>
+        <button class="btn btn-info" type="button" name="button" (click)= "Addmore()">Addmore</button>
        </li>
 
        <li class="list-group-item" *ngIf= "Adding">
-               <input type="text" class = "form-control" [(ngModel)] = "inputQuote1">
+               <input type="text" class = "form-control" [(ngModel)] = "inputQuote">
                <br>
-               <button class="btn btn-success" type="button" name="button" (click) = "changehero()" [disabled]  = "!inputQuote1">change my hero</button>
+               <button class="btn btn-success" type="button" name="button" (click) = "addHero()" [disabled]  = "!inputQuote">Add quote</button>
          </li>
 
     </ul>
