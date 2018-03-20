@@ -17,11 +17,11 @@ export class QuoteDetailsComponent implements OnInit {
      this.isRemove.emit(remove);
    }
 
-     Like=0;
+     upvote=0;
    downvote=0;
 
-    Like(){
-      this.Like=this.Like+1;
+    voteUp(){
+      this.upvote=this.upvote+1;
         }
 
     voteDown(){
