@@ -8,7 +8,7 @@
             <label for="newquote">INSPIRE SOMEONE TODAY</label>
             <textarea class="form-control" id="description" rows="4" placeholder="write a quote here :-)" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-             <p>Quote is required</p>
+             <p>Quote required</p>
             </div>
           </div>
 
@@ -19,7 +19,7 @@
             <label for="author">Your name</label>
             <input type="text" required class="form-control" id="name" placeholder="Enter your name here" [(ngModel)]="newQuote.name" name="name" #name="ngModel">
             <div [hidden] ="name.valid || name.pristine" class="alert alert-danger">
-                <p>Author Name  is required</p>
+                <p>Your Name  is required</p>
             </div>
 
             <br>
@@ -27,7 +27,7 @@
                 <label for="publishdate">Date Uploaded</label>
                 <input type='date' id="createDate" required [(ngModel)]="newQuote.createDate" name="createDate" #createDate="ngModel">
                 <div [hidden] ="createDate.valid || createDate.pristine" class="alert alert-danger">
-                    <p>Date Published is required</p>
+                    <p>Date uploaded is required</p>
                 </div>
             </div>
 

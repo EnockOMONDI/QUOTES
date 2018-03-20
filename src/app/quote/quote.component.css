@@ -9,3 +9,8 @@ hr{
     text-align: center;
 
 }
+.container{
+  background-image:  url(/assets/images.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
