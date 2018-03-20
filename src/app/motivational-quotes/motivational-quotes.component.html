@@ -5,32 +5,5 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>QUOTES</title>
-</head>
-<body>
-  <h1>
-    INSPIRE SOMEONE TODAY
-  </h1>
-  <hr>
-<div class="row">
-  <div class="col-4 offset-4">
-    <ul class="list-group">
-      <li class="list-group-item" *ngFor="let quote1 of quote1s" > {{quote1}}</li>
-      <li class="list-group-item">
-        <button class="btn btn-info" type="button" name="button" (click)= "Addmore()">Addmore</button>
-       </li>
 
-       <li class="list-group-item" *ngIf= "Adding">
-               <input type="text" class = "form-control" [(ngModel)] = "inputQuote">
-               <br>
-               <button class="btn btn-success" type="button" name="button" (click) = "addHero()" [disabled]  = "!inputQuote">Add quote</button>
-                <app-quote-details></app-quote-details>
-
-             </li>
-
-    </ul>
-  </div>
-</div>
-
-
-</body>
 </html>
