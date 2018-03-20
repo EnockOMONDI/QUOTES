@@ -16,15 +16,15 @@
 
           <div class="form-group">
 
-            <label for="author">Author</label>
-            <input type="text" required class="form-control" id="name" placeholder="Credit the Author!" [(ngModel)]="newQuote.name" name="name" #name="ngModel">
+            <label for="author">Your name</label>
+            <input type="text" required class="form-control" id="name" placeholder="Enter your name here" [(ngModel)]="newQuote.name" name="name" #name="ngModel">
             <div [hidden] ="name.valid || name.pristine" class="alert alert-danger">
                 <p>Author Name  is required</p>
             </div>
 
             <br>
             <div class="form-group">
-                <label for="publishdate">Date Published</label>
+                <label for="publishdate">Date Uploaded</label>
                 <input type='date' id="createDate" required [(ngModel)]="newQuote.createDate" name="createDate" #createDate="ngModel">
                 <div [hidden] ="createDate.valid || createDate.pristine" class="alert alert-danger">
                     <p>Date Published is required</p>
@@ -33,7 +33,7 @@
 
 
           </div>
-          <button type="submit" class="btn btn-success btn-lg">Publish Quote</button>
+          <button type="submit" class= "btn btn-secondary btn-lg">INSPIRE</button>
       </form>
 
   </div>
