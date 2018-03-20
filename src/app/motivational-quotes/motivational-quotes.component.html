@@ -23,7 +23,9 @@
                <input type="text" class = "form-control" [(ngModel)] = "inputQuote">
                <br>
                <button class="btn btn-success" type="button" name="button" (click) = "addHero()" [disabled]  = "!inputQuote">Add quote</button>
-         </li>
+                <app-quote-details></app-quote-details>
+
+             </li>
 
     </ul>
   </div>

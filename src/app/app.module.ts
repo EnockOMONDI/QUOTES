@@ -5,18 +5,20 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MotivationalQuotesComponent } from './motivational-quotes/motivational-quotes.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MotivationalQuotesComponent
+    MotivationalQuotesComponent,
+    QuoteDetailsComponent
   ],
   imports: [
     BrowserModule
     FormsModule,
-  ],
-  providers: [],
+  ]
+  providers: []
   bootstrap: [AppComponent]
 })
 export class AppModule { }

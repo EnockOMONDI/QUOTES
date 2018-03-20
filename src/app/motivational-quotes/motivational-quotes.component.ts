@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './motivational-quotes.component.html',
   styleUrls: ['./motivational-quotes.component.css']
 })
+
 export class MotivationalQuotesComponent implements OnInit {
    quote1s = ["passion is the beginning of success","today is your day ","tommorow is bright"]
    Adding = false;
@@ -18,7 +19,9 @@ addHero(){
     this.Adding = !this.Adding
 
   }
+deleteQuote(){
 
+}
   constructor() { }
 
   ngOnInit() {
