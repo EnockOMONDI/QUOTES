@@ -9,19 +9,17 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes=[
-    new Quote(1,'There are years that ask questions and years that answer.','Zora Neale Hurston',new Date(2017,3,14)),
-    new Quote(2,'Smile the worst is yet to come.','A song',new Date(2017,3,14) ),
-    new Quote(3,'Today is a new day.','African Proverb',new Date(2017,2,14)),
-    new Quote(4,'Ask for what you want and be prepared to get it.','Maya Angelou',new Date(2017,6,9)),
-    new Quote(5,'The future belongs to those who prepare for it today.','Malcom X',new Date(2017,1,12)),
-    new Quote(6,'We are the change that we seek.','Barack Obama',new Date(2017,1,12)),
+    new Quote(1,'Passion is the beginning of success.','Enock Omondi',new Date(2018,3,14)),
+    new Quote(2,'Success is not final, failure is not fatal: it is the courage to continue that counts','churchill',new Date(2018,3,14) ),
+    new Quote(3,'The future belongs to those who prepare for it today.','Malcom X',new Date(2018,1,12)),
+
 
   ]
 
   removeQuote(isRemove,index){
     if(isRemove){
        let toRemove=confirm(`Are you sure you want to delete quote by ${this.quotes[index].name}`)
-      
+
      if(toRemove){
       this.quotes.splice(index,1);
     }
@@ -32,7 +30,7 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.id=quoteLength+1;
     this.quotes.push(quote)
-  } 
+  }
 
 
 

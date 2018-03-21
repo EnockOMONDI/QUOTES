@@ -1,16 +1,10 @@
 h1{text-align: center;
-    color: #DF005B;
+  font-family:monospace;
+    color:#5e5e5e
 }
-hr{
-    border-color: rgb(231, 153, 185);
-}
-
-.quotas{
-    text-align: center;
-
-}
-.container{
-  background-image:  url(/assets/images.jpeg);
+.container-quotes{
+  background-image: url(assets/img.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  
 }
