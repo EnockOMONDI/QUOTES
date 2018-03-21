@@ -1,7 +1,12 @@
 
 .prettyform{
     font-size: 50px;
-   padding-left: 200px;
+
 
 
   }
+.container-fluid{
+  background-image: url(assets/img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
