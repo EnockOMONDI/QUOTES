@@ -6,15 +6,14 @@
 
 
 
-<button (click)='voteUp()' class="btn btn-success" type="submit">
-    <span class="glyphicon glyphicon-thumbs-u" aria-hidden="true"></span>
+<button (click)='voteUp()' class="btn btn-light-blue" type="submit">
     <span class="badge">{{upvote}} Likes</span>
 </button>
 
-<button  (click)='voteDown()' class="btn btn-primary" type="submit">
-    
+<button  (click)='voteDown()' class="btn btn-light-blue " type="submit">
+
     <span class="badge">{{downvote}}Downvotes</span>
 </button>
 
 
-<button (click) = 'quoteRemove(true)'class="btn-remove" class="btn btn-danger btn-sm" >Delete Quote</button>
+<button (click) = 'quoteRemove(true)'class="btn-remove" class="btn btn-outline-warning btn-rounded waves-effect btn-sm" >Delete Quote</button>
