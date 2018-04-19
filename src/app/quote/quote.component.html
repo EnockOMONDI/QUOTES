@@ -1,18 +1,11 @@
 <div class="container">
 <h1> IMAGINE | CREATE | INSPIRE </h1>
-
-
- <div class="content">
  <div class="row">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
-
-
-
+  <h1 class="font-weight-bold text-center h1 py-5">QUOTES</h1>
 <div class="container-quotes">
   <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-
-
     <app-quote-details [quote]='quote' (isRemove)= 'removeQuote($event,i)'></app-quote-details>
   </div>
 </div>

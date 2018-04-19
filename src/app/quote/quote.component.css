@@ -10,9 +10,17 @@ h1{
   background-position: center;
 
 }
-.content {
-    max-width: 500px;
+.row {
+
     margin: auto;
     background: white;
-    padding: 10px;
+    padding-left: 340px;
+    padding-top :10px;
+}
+.container-quotes{
+
+
+}
+.container{
+
 }

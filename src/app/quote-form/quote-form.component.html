@@ -4,7 +4,7 @@
       <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' class="prettyform">
 
          <div class="form-group">
-            <textarea class="form-control" id="description" rows="1" placeholder="write a quote here :-)" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
+            <textarea class="form-control" id="description" rows="1" placeholder="write a quote here" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
              <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
               <p>Quote required</p>
             </div>
@@ -29,9 +29,14 @@
 
 
           </div>
-          <button type="submit" class="btn btn-light-blue">INSPIRE</button>
 
+            <div style="text-align:center;">
+          <button type="submit" class="btn btn-light-blue" >INSPIRE</button>
+            </div>
       </form>
+
+
+
 
 
   </div>

@@ -11,8 +11,6 @@ export class QuoteComponent implements OnInit {
   quotes=[
     new Quote(1,'Passion is the beginning of success.','Enock Omondi',new Date(2018,3,14)),
     new Quote(2,'Success is not final, failure is not fatal: it is the courage to continue that counts','churchill',new Date(2018,3,14) ),
-    new Quote(3,'The future belongs to those who prepare for it today.','Malcom X',new Date(2018,1,12)),
-
 
   ]
 
